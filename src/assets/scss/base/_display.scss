@@ -1,0 +1,10 @@
+.d-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@for $width from 1 through 100 {
+  .w-#{$width} {
+    width: calc(#{$width} * 1%) !important;
+  }
+}
